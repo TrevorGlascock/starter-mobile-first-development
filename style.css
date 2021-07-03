@@ -27,3 +27,36 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+/*Custom Div Class Tags for Mobile Devices*/
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+.group img {
+  width: 100%;
+}
+.item {
+  flex: 1;
+  margin: 1rem;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.bg-coffee {
+  background-color: #775f47;
+}
+
+/*Scale up for Desktop*/
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 20%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
